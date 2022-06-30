@@ -111,6 +111,9 @@ footer{
 
 
 /* Productos */
+main{
+    padding-top: 30px;
+}
 .carru{
     position: relative;
     width: 100%;
