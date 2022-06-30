@@ -174,6 +174,12 @@ article{
     border: 2px solid #27282c;
 }
 
+article img{
+    width: 350px;
+    height: 300px;
+    border-radius: 7px;
+}
+
 /* Ubicación */
 
 .mapa{
