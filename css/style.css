@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #000;
 }
 
 /* Encabezado */
@@ -10,32 +11,28 @@
     justify-content: center;
     text-align: center;
     gap: 60px;
+    color: #fff;
 }
 
 
 /* Navegacion */
 
-ul{
+nav{
     display: flex;
     justify-content: space-around;
     text-align: center;
     padding-top: 10px;
 }
 
-li{
-    list-style: none;
-}
-
-li a{
-    text-decoration: none;  
-    color: #fff;
-    background: #27282c;
+nav a{
+    text-decoration: none;
+    color: var(--clr);
 }
 
 a{
     position: relative;
     background: #444;
-    color: #fff;
+    color: var(--clr);
     text-transform: uppercase;
     font-size: 20px;
     border-radius: 10px;
@@ -109,11 +106,50 @@ a:hover i::after{
 
 footer{
     text-align: center;
+    color: #fff;
 }
 
 
 /* Productos */
+.carru{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.botones{
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .6);
+    -webkit-transition: all .3s ease;
+    -o-transition: all 3s ease;
+    transition: all 3s ease;
+}
+
+.botones:hover{
+    cursor: pointer;
+}
+
+.atras{
+    left: 2%;
+    top: calc(50% - 70px);
+}
+
+.siguiente{
+    right: 2%;
+    top: calc(50% - 70px);
+}
 h2{
     text-align: center;
     padding-top: 30px;
@@ -144,6 +180,8 @@ article{
 }
 
 section{
+    display: flex;
+    justify-content: center;
     text-align: center;
-    padding-top: 30px;
+    flex-direction: column;
 }
